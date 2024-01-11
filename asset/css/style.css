@@ -1,0 +1,304 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+banner {
+  grid-area: banner;
+}
+
+header {
+  grid-area: header;
+}
+
+hero {
+  grid-area: hero;
+}
+
+footer {
+  grid-area: footer;
+}
+
+filter {
+  grid-area: filter;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  "banner" 
+        "header" 
+        "hero" 
+        "filter"
+         "main"
+        "number" 
+        "footer" ;
+}
+
+.products {
+  width: 100%;
+}
+
+.banner_shipping {
+  display: flex;
+  justify-content: center;
+  background-color: #ff5f3b;
+  color: white;
+  padding: 0.5rem;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.header_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+hero {
+  width: 100%;
+}
+
+.hero_image {
+  width: 100%;
+}
+
+.filter_organizer {
+  display: flex;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.organizer {
+  display: flex;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  border-color: #ff5f3b !important;
+  border-radius: 5%;
+  border: 1px solid;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: #ff5f3b !important;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+
+  border: 1px solid;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  color: #9f512c;
+  font-size: 20px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  display: flex;
+  background: #ff5f3b;
+  color: white;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: none;
+  border-radius: 50px;
+}
+
+.product_information {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+number {
+  grid-area: number;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.load_more {
+  display: flex;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+
+  border-color: #ff5f3b !important;
+  border-radius: 5%;
+  border: 1px solid;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+footer {
+  height: 2rem;
+  background-color: #feeae2;
+
+}
+
+.copy {
+    width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.organizer_desktop
+{
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        "banner banner"
+        "header header"
+        "hero hero"
+        "filter main"
+        "number number"
+        "footer footer";
+      }
+
+    .menu {
+        display: none;
+      }
+    
+  banner {
+    grid-area: banner;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  .header_logo
+  {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+
+  hero {
+    grid-area: hero;
+  }
+
+  filter {
+    grid-area: filter;
+    padding-top: 2.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+  }
+
+  .organizer
+  {
+    display: none;
+  }
+
+  main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  1fr;
+    margin-top: 3rem;
+ 
+  }
+
+ 
+
+  number {
+    grid-area: number;
+  }
+
+  footer {
+    grid-area: footer;
+
+  }
+
+  .organizer_desktop
+  {
+    display: flex;
+    
+  }
+
+.filter_organizer
+{
+    display: flex;
+    flex-direction:column;
+    padding-right: 6rem;
+   
+}
+
+.organizer_desktop
+{
+    max-width: 100%;
+    display: inline;
+}
+
+  
+.especification
+
+{
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 0.3rem;
+}
+
+.dog_treats{
+    margin-bottom: 1.5rem;
+}
+
+.organizer_tittle
+{
+    margin-bottom: 0.5rem;
+}
+
+.information2_organizer
+{
+    margin-top: 2rem;
+}
+
+
+}
